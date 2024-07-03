@@ -23,5 +23,13 @@ urlpatterns = [
     path('',views.homePage, name='home'),
     path('about/',views.aboutUs, name='about'),
     path('contact/',views.contact, name='contact'),
+    path('election-official/',views.electionOfficial, name='election-official'),
+    path('ward-employee/',views.wardEmployee, name='ward-employee'),
+    path('public-hearing/',views.publicHearing, name='public-hearing'),
+    path('multipal-staffs/',views.multipalStaffs, name='multipal-staffs'),
+    path('annual-reports/',views.annualReports, name='annual-reports'),
+    path('monthly-reports/',views.monthlyReports, name='monthly-reports'),
+    path('gallery/',views.galleries, name='gallery'),
+    
     
 ]

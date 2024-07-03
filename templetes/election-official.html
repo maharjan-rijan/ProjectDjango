@@ -1,4 +1,6 @@
 {% include "header.html" %}
+{% load static %}
+<section>
   <div class="my-1">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-secondary">
@@ -9,7 +11,7 @@
           </a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-          <a class="link-body-emphasis fw-semibold text-decoration-none" href="election-official.html">Elected Official</a>
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="{% url 'election-official' %}">Elected Official</a>
         </li>
       </ol>
     </nav>
@@ -89,5 +91,6 @@
         </tr>
       </tbody>
     </table>
-  </div><!-- /.container -->
+  </div>
+</section>
   {% include "footer.html" %}
