@@ -24,6 +24,12 @@ def annualReports(request):
 def monthlyReports(request):
     return render(request,"monthly-reports.html")
 
+def programAndProjects(request):
+    return render(request,"budget-program.html")
+
+def planningAndProjects(request):
+    return render(request,"planning-project.html")
+
 def galleries(request):
     return render(request,"gallery.html")
 

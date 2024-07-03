@@ -29,6 +29,8 @@ urlpatterns = [
     path('multipal-staffs/',views.multipalStaffs, name='multipal-staffs'),
     path('annual-reports/',views.annualReports, name='annual-reports'),
     path('monthly-reports/',views.monthlyReports, name='monthly-reports'),
+    path('budget-program/',views.programAndProjects, name='budget-program'),
+    path('planning-project/',views.planningAndProjects, name='planning-project'),
     path('gallery/',views.galleries, name='gallery'),
     
     

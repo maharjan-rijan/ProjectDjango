@@ -155,7 +155,7 @@
             <a class="nav-link" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Introduction
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -170,8 +170,8 @@
               Program and Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Budget and Program</a>
-              <a class="dropdown-item" href="#">Planning and Projects</a>
+              <a class="dropdown-item" href="{% url 'budget-program' %}">Budget and Program</a>
+              <a class="dropdown-item" href="{% url 'planning-project' %}">Planning and Projects</a>
             </div>
           </li>
           <li class="nav-item dropdown">
