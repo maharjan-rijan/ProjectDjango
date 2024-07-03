@@ -1,0 +1,24 @@
+{% include "header.html" %}
+{% load static %}
+<section>
+  <div class="my-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-secondary">
+        <li class="breadcrumb-item">
+          <a class="link-body-emphasis" href="{% url 'home' %}">
+            <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+            <span class="visually-hidden">Home</span>
+          </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="{% url 'dosd' %}">Department of Social Development</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="container marketing" style="margin-top: 9px;">
+    <h4>Department of Social Development</h4>
+   
+  </div>
+</section>
+  {% include "footer.html" %}

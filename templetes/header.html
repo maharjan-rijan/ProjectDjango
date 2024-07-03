@@ -179,15 +179,15 @@
               Departments
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Department of Administration Planning and Monitoring</a>
-              <a class="dropdown-item" href="#">Department of Education</a>
-              <a class="dropdown-item" href="#">Department of Economic Administration</a>
-              <a class="dropdown-item" href="#">Department of Infrastructure Development</a>
-              <a class="dropdown-item" href="#">Department of Health Service</a>
-              <a class="dropdown-item" href="#">Department of Social Development</a>
-              <a class="dropdown-item" href="#">Department of Economic Development</a>
-              <a class="dropdown-item" href="#">Department of Agricultural</a>
-              <a class="dropdown-item" href="#">Department of Law</a>
+              <a class="dropdown-item" href="{% url 'doapam' %}">Department of Administration Planning and Monitoring</a>
+              <a class="dropdown-item" href="{% url 'doedu' %}">Department of Education</a>
+              <a class="dropdown-item" href="{% url 'doea' %}">Department of Economic Administration</a>
+              <a class="dropdown-item" href="{% url 'doid' %}">Department of Infrastructure Development</a>
+              <a class="dropdown-item" href="{% url 'dohs' %}">Department of Health Service</a>
+              <a class="dropdown-item" href="{% url 'dosd' %}">Department of Social Development</a>
+              <a class="dropdown-item" href="{% url 'doed' %}">Department of Economic Development</a>
+              <a class="dropdown-item" href="{% url 'doa' %}">Department of Agricultural</a>
+              <a class="dropdown-item" href="{% url 'dol' %}">Department of Law</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -195,10 +195,10 @@
               E-Governance Service
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Vital Registration</a>
-              <a class="dropdown-item" href="#">Social Security</a>
-              <a class="dropdown-item" href="#">Citizen Character</a>
-              <a class="dropdown-item" href="#">Application Letter</a>
+              <a class="dropdown-item" href="{% url 'vital-reg'  %}">Vital Registration</a>
+              <a class="dropdown-item" href="{% url 'social-security'  %}">Social Security</a>
+              <a class="dropdown-item" href="{% url 'citizen-character'  %}">Citizen Character</a>
+              <a class="dropdown-item" href="{% url 'application-letter'  %}">Application Letter</a>
             </div>
           </li>
           <li class="nav-item dropdown">
