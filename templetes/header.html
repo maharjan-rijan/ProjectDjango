@@ -75,6 +75,9 @@
       <symbol id="mail" viewBox="0 0 16 16">
         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
       </symbol>
+      <symbol id="download" viewBox="0 0 16 16">
+        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
   </svg>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
@@ -123,8 +126,8 @@
       <ul class="nav me-end">
           <li class="nav-item"><a class="nav-link link-body-emphasis px-2" href="#"><svg class="bi" width="20" height="20"><use xlink:href="#mail"/></svg><p style="display: inline; padding:10px; align-content: center; font-family:'Times New Roman', Times, serif;">example@gmail.com</p></a></li>
           <li class="nav-item"><a class="nav-link link-body-emphasis px-2" href="#"><svg class="bi" width="20" height="20"><use xlink:href="#telephone"/></svg><p style="display: inline; padding:10px; align-content: center; font-family:'Times New Roman', Times, serif;">+977 4466837852</p></a></li>
-        <!-- <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li> -->
+         {% comment %} <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>  {% endcomment %}
       </ul>
     </div>
   </nav>
@@ -169,6 +172,23 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Budget and Program</a>
               <a class="dropdown-item" href="#">Planning and Projects</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Department of Administration Planning and Monitoring</a>
+              <a class="dropdown-item" href="#">Education Department</a>
+              <a class="dropdown-item" href="#">Department of Economic Administration</a>
+              <a class="dropdown-item" href="#">Department of Infrastructure Development</a>
+              <a class="dropdown-item" href="#">Health Department</a>
+              <a class="dropdown-item" href="#">Department of Social Development</a>
+              <a class="dropdown-item" href="#">Department of Economic Development</a>
+              <a class="dropdown-item" href="#">Agricultural Department</a>
+              <a class="dropdown-item" href="#">Law Department</a>
+              <a class="dropdown-item" href="#">Animal Department</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -230,23 +250,6 @@
               <a class="dropdown-item" href="#">Public Audit</a>
               <a class="dropdown-item" href="#">Social Audit</a>
               <a class="dropdown-item" href="#">Publications</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Departments
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Administration Planning and Monitoring Department </a>
-              <a class="dropdown-item" href="#">Education Department</a>
-              <a class="dropdown-item" href="#">Economic Administration Department</a>
-              <a class="dropdown-item" href="#">Infrastructure Development Department</a>
-              <a class="dropdown-item" href="#">Health Department</a>
-              <a class="dropdown-item" href="#">Social Development Department</a>
-              <a class="dropdown-item" href="#">Economic Development Department</a>
-              <a class="dropdown-item" href="#">Agricultural Department</a>
-              <a class="dropdown-item" href="#">Law Department</a>
-              <a class="dropdown-item" href="#">Animal Department</a>
             </div>
           </li>
           <li class="nav-item">
