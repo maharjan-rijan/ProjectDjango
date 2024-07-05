@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'nepali_datetime_field',
+    'main',
+    'departments',
+    # 'nepali_datetime_field',
 ]
 
 MIDDLEWARE = [
