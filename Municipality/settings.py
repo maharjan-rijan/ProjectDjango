@@ -57,7 +57,8 @@ ROOT_URLCONF = 'Municipality.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, "templetes"],
+        'DIRS': [
+            BASE_DIR, "main/templetes"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +122,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS=[
-    BASE_DIR,"static"
+    BASE_DIR,"staticfiles"
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
