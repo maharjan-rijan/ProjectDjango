@@ -140,6 +140,7 @@
       </ul>
     </div>
   </nav>
+
   <header class="mb-1">
     <div class="d-flex flex-wrap justify-content-center" style="margin: 8px;">
       <a href="{% url 'home' %}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
@@ -244,7 +245,7 @@
              News and Information
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">News and Notice</a>
+              <a class="dropdown-item" href="{% url 'newsNotice' %}">News and Notice</a>
               <a class="dropdown-item" href="#">Public Procurement/Tender Notice</a>
               <a class="dropdown-item" href="#">Act, Laws and Directives</a>
               <a class="dropdown-item" href="#">Tax and Fee</a>

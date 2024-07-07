@@ -20,8 +20,7 @@ from Municipality import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls'), name='home'),
-    
+    path('', views.homePage, name='home'),
     path('about/',views.aboutUs, name='about'),
     path('election-official/',views.electionOfficial, name='election-official'),
     path('ward-employee/',views.wardEmployee, name='ward-employee'),
@@ -50,6 +49,8 @@ urlpatterns = [
     path('monthly-reports/',views.monthlyReports, name='monthly-reports'),
     
     path('gallery/',views.galleries, name='gallery'),
+    
+    path('news-notice/',views.newsNotice, name='newsNotice'),
     
     path('contact/',views.contact, name='contact'),
     

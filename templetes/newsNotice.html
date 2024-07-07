@@ -1,0 +1,106 @@
+{% include "header.html" %}
+{% load static %}
+<section>
+  <div class="my-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-secondary">
+        <li class="breadcrumb-item">
+          <a class="link-body-emphasis" href="{% url 'home' %}">
+            <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+            <span class="visually-hidden">Home</span>
+          </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="{% url 'newsNotice' %}">News and Notices</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</header>
+  <div class="container marketing" style="margin-top: 9px;">
+    <h4>News and Notices</h4><hr>
+    <div class="card mb-3" style="max-width: 1300px;">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="{% static 'assets/img/events-1.jpg' %}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting test longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="col-md-3"  style="width: 20%; height:20%; align-items: center; padding:20px;">
+          <div class="card text-center">
+            <div class="card-header">
+              Sunday
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">12</h1>
+            </div>
+            <div class="card-footer text-body-secondary">
+              2 days ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 1300px;">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="{% static 'assets/img/events-1.jpg' %}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting test longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="col-md-3"  style="width: 20%; height:20%; align-items: center; padding:20px;">
+          <div class="card text-center">
+            <div class="card-header">
+              Sunday
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">12</h1>
+            </div>
+            <div class="card-footer text-body-secondary">
+              2 days ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 1300px;">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="{% static 'assets/img/events-1.jpg' %}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting test longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="col-md-3"  style="width: 20%; height:20%; align-items: center; padding:20px;">
+          <div class="card text-center">
+            <div class="card-header">
+              Sunday
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">12</h1>
+            </div>
+            <div class="card-footer text-body-secondary">
+              2 days ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+ {% include "footer.html" %}
