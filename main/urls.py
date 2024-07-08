@@ -1,5 +1,9 @@
 from django.urls import path
-from .views import homePage
+from .views import aboutUs,electionOfficial,wardEmployee,multipalStaffs
 urlpatterns = [
-    path('', homePage, name="home")
+    path('about/', aboutUs, name="about"),
+    path('election-official/',electionOfficial, name='election-official'),
+    path('ward-employee/',wardEmployee, name='ward-employee'),
+    path('multipal-staffs/',multipalStaffs, name='multipal-staffs'),
+    
 ]

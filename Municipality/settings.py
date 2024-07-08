@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'programProject',
     'departments',
+    'eGovernance',
+    'newsInfo',
+    'reports',
     # 'nepali_datetime_field',
 ]
 
@@ -58,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR, "templetes"],
+            BASE_DIR, "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
