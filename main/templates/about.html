@@ -21,50 +21,24 @@
     <div class="row featurette">
       <h4>Introduction</h4><hr>
       <div class="row">
+        {% for ab in aboutData %}
       <div class="col-md-10" style="text-align: justify;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, autem at fugit dolorem accusantium quibusdam blanditiis ipsa vel totam in corporis, nemo est maxime. Nostrum quo cum sed molestiae itaque?
-        Quae cumque commodi earum, nisi illum sapiente similique quos quisquam temporibus expedita corrupti sequi dolorem ratione? Tempora quibusdam aperiam saepe ex voluptatum excepturi dolorum officiis totam animi eligendi! Dolor, debitis!
-        Est voluptatibus, animi exercitationem quasi minus obcaecati reiciendis ad molestias neque rem nobis culpa consequatur aut harum soluta. Incidunt praesentium modi reiciendis doloremque voluptatum maiores beatae cupiditate quis deleniti. Culpa?
-        Quibusdam deleniti modi voluptatum tempora consequuntur deserunt inventore sapiente. Dolore, laboriosam pariatur. Eaque commodi quod nihil cupiditate possimus dolorum perspiciatis libero quaerat inventore corporis, quia ea iste voluptatibus illum iusto!
-        Mollitia ea quam aliquam veritatis a pariatur nam, odio repellat reprehenderit ad, aliquid commodi fugiat beatae hic earum quisquam molestiae quaerat eligendi officia dolorem! Veniam quasi nostrum modi voluptas possimus!
-        Ducimus corrupti earum voluptates atque enim esse laudantium, quibusdam neque, commodi, sed sunt. Explicabo ab corrupti ullam a reiciendis harum? Dolores corrupti reiciendis, vel ipsam quas ducimus doloremque odio similique.
-        Dolorem obcaecati dignissimos quas quam explicabo hic praesentium culpa similique a qui tempora corrupti ducimus et, sint accusamus in. Quae non commodi blanditiis dolore laudantium quasi, animi sapiente sunt provident.
-        In magni perferendis praesentium beatae quia est quae voluptas voluptatum delectus repellendus quo rerum doloremque qui, laudantium voluptate excepturi deleniti earum. Eligendi sapiente vero ipsa quidem atque nihil quaerat eum!
-        Est facilis dolore, veritatis laborum ipsa quasi quidem nesciunt ipsam deleniti totam a delectus fugit voluptatibus tempora adipisci? Reprehenderit molestias ducimus fugiat ratione voluptatum praesentium odit dolores voluptatibus nisi odio.
-        Quisquam provident nemo laboriosam, officia numquam doloribus quas commodi omnis suscipit nostrum. Vero fuga blanditiis pariatur quaerat, mollitia suscipit natus tenetur id perspiciatis. Consectetur possimus totam nesciunt ut quasi exercitationem?
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, autem at fugit dolorem accusantium quibusdam blanditiis ipsa vel totam in corporis, nemo est maxime. Nostrum quo cum sed molestiae itaque?
-        Quae cumque commodi earum, nisi illum sapiente similique quos quisquam temporibus expedita corrupti sequi dolorem ratione? Tempora quibusdam aperiam saepe ex voluptatum excepturi dolorum officiis totam animi eligendi! Dolor, debitis!
-        Est voluptatibus, animi exercitationem quasi minus obcaecati reiciendis ad molestias neque rem nobis culpa consequatur aut harum soluta. Incidunt praesentium modi reiciendis doloremque voluptatum maiores beatae cupiditate quis deleniti. Culpa?
-        Quibusdam deleniti modi voluptatum tempora consequuntur deserunt inventore sapiente. Dolore, laboriosam pariatur. Eaque commodi quod nihil cupiditate possimus dolorum perspiciatis libero quaerat inventore corporis, quia ea iste voluptatibus illum iusto!
-        Mollitia ea quam aliquam veritatis a pariatur nam, odio repellat reprehenderit ad, aliquid commodi fugiat beatae hic earum quisquam molestiae quaerat eligendi officia dolorem! Veniam quasi nostrum modi voluptas possimus!
-        Ducimus corrupti earum voluptates atque enim esse laudantium, quibusdam neque, commodi, sed sunt. Explicabo ab corrupti ullam a reiciendis harum? Dolores corrupti reiciendis, vel ipsam quas ducimus doloremque odio similique.
-        Dolorem obcaecati dignissimos quas quam explicabo hic praesentium culpa similique a qui tempora corrupti ducimus et, sint accusamus in. Quae non commodi blanditiis dolore laudantium quasi, animi sapiente sunt provident.
-        In magni perferendis praesentium beatae quia est quae voluptas voluptatum delectus repellendus quo rerum doloremque qui, laudantium voluptate excepturi deleniti earum. Eligendi sapiente vero ipsa quidem atque nihil quaerat eum!
-        Est facilis dolore, veritatis laborum ipsa quasi quidem nesciunt ipsam deleniti totam a delectus fugit voluptatibus tempora adipisci? Reprehenderit molestias ducimus fugiat ratione voluptatum praesentium odit dolores voluptatibus nisi odio.
-        Quisquam provident nemo laboriosam, officia numquam doloribus quas commodi omnis suscipit nostrum. Vero fuga blanditiis pariatur quaerat, mollitia suscipit natus tenetur id perspiciatis. Consectetur possimus totam nesciunt ut quasi exercitationem?
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore necessitatibus quo fuga officiis, sapiente rerum eius quaerat quos aliquam maiores nostrum non magnam dolores, ducimus aperiam fugit. Eveniet, sit?
+        {{ab.description}}
       </div>
+      {% endfor %}
+
       <div class="col-md-2">
+        {% for mb in memberData %}
+        {% if mb.memberOf == 'multipalStaffs' %}
         <div class="card " style="width: 100%; margin-top:10px;">
-          <img src="{% static 'assets/img/members/member-2.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+          <img src="/media/{{mb.image}}" class="card-img-top" alt="...">
+          <div class="card-body" style="text-align:center;">
+            <h5 class="card-title">{{ mb.name }}</h5>
+            <h6 class="card-title">{{ mb.designation }}</h6>
           </div>
         </div>
-        <div class="card" style="width: 100%; margin-top:20px;">
-          <img src="{% static 'assets/img/members/member-2.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-        <div class="card" style="width: 100%; margin-top:20px;">
-          <img src="{% static 'assets/img/members/member-2.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
+        {% endif %}
+        {% endfor %}
       </div>
     </div>
     <div class="container d-flex flex-wrap justify-content-center">

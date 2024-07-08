@@ -142,10 +142,11 @@
   </nav>
 
   <header class="mb-1">
+    <div id="head">
     <div class="d-flex flex-wrap justify-content-center" style="margin: 8px;">
       <a href="{% url 'home' %}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-        <img src="{% static 'assets/img/logo/nep_logo.png' %}" alt="" srcset="" width="160" height="150" style="background: none;">
-        <div style="color:red; font-weight:700;"><span class="fs-3" style="margin-left: 5px;">Chandragiri Municipality<br>Office of Municipal Executive<h6 style="margin-left: 7px;">Balambu, Kathmandu, Bagmati Province, Nepal</h6></span></div>
+        <img src="{% static 'assets/img/logo/nep_logo.png' %}" alt="" srcset="" width="150" height="150" style="background: none;">
+        <div id="mulText" style="color:red; font-weight:700;"><span class="fs-3" style="margin-left: 5px;">Chandragiri Municipality<br>Office of Municipal Executive<h6 style="margin-left: 7px;">Balambu, Kathmandu, Bagmati Province, Nepal</h6></span></div>
       </a>
       <form class="d-flex" role="search" style="margin:50px; text-decoration: none;">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -158,10 +159,11 @@
         <svg class="bi text-red" width="20" height="20"><use xlink:href="#megaphone"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <img src="{% static 'assets/img/logo/chandragiri.png' %}" alt="" srcset="" height="20" width="20">&nbsp;&nbsp;
         Chandragiri Municipality &#124; Office of Municipal Executive &#124; Balambu, Kathmandu, Bagmati Province, Nepal</marquee></div>
-  <div class="d-flex flex-wrap justify-content-center">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="font-weight: bold;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="justify-content: end;">
-        <span class="navbar-toggler-icon"></span>
+      </div>
+  <div id="nab" class="d-flex flex-wrap justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight: bold;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="justify-content: end;"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">

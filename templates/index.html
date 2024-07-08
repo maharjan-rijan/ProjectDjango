@@ -51,40 +51,30 @@
   </div>
   <div class="container marketing">
     <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for mb in memberData %}
       <div class="col">
         <div class="card h-100">
-          <img  class="card-img-top" src="{% static 'assets/img/logo/chandragiri.png' %}" alt="" srcset=""  style="padding: 20px;">
-          <div class="card-footer">
-              <h5 class="card-title">Mayor</h5>
+          <img  class="card-img-top" src="/media/{{ mb.image }}" alt="" srcset=""  style="padding: 20px;">
+          <div class="card-footer" style="text-align:center;">
+              <h5 class="card-title">{{ mb.name}}</h5>
+              <h6 class="card-title">{{ mb.designation}}</h6>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <img class="card-img-top" src="{% static 'assets/img/logo/chandragiri.png' %}" alt="" srcset=""  style="padding: 20px;">
-          <div class="card-footer">
-            <h5 class="card-title">Deputy Mayor</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img class="card-img-top" src="{% static 'assets/img/logo/chandragiri.png' %}" alt="" srcset=""  style="padding: 20px;">
-          <div class="card-footer">
-            <h5 class="card-title">Executives</h5>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
+
     </div>
     <div class="row" style="margin-top:3rem;">
     <div class="col-4">
       <div class="p-4 mb-3 bg-body-tertiary rounded">
+        {% for ab in aboutData %}
         <h4 class="fst-italic">About</h4>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cumque officiis odio ad provident tempore sapiente pariatur nulla neque iusto delectus voluptas rem eum. Voluptatem placeat temporibus inventore officia numquam.Customize this section to tell your visitors a little bit about your publication,lprewriters,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aliquid sapiente ullam quasi voluptatum, quidem odio amet quia vero accusantium dolorum inventore incidunt sed possimus, tempora quae. Sint, quo quisquam?content, or something else entirely. Totally up to you.</p>
+        <p class="mb-0">{{ ab.description | slice:500 }}</p>
         <a href="{% url 'about' %}" class="icon-link gap-1 icon-link-hover stretched-link">
           More
           <svg class="bi"><use xlink:href="#chevron-right"/></svg>
         </a>
+        {% endfor %}
       </div>
   </div> 
   <div class="col-4">

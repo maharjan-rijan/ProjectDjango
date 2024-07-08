@@ -1,8 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from main.models import About,Member
 
 def homePage(request):
-    return render(request,'index.html')
+    aboutData=About.objects.all()
+    memberData=Member.objects.all()
+    data={
+        'aboutData':aboutData,
+        'memberData' : memberData
+    }
+    return render(request,'index.html',data)
 
 def galleries(request):
     return render(request,"gallery.html")

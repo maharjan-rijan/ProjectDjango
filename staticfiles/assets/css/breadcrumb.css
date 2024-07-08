@@ -49,3 +49,21 @@
     display: none;
   }
   
+  @media only screen and (max-width:1000px) {
+    #head{
+      display: flow-root;
+      max-width: fit-content;
+    }
+    #nab{
+
+      display: flex;
+    }
+    #head img{
+      height: auto;
+      width: auto;
+    }
+    #head #mulText{
+      font-size: small;
+    }
+
+  }
