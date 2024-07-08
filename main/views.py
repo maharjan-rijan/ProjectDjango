@@ -11,8 +11,20 @@ def aboutUs(request):
     return render(request,'about.html',data)
 
 def electionOfficial(request):
-    return render(request,"election-official.html")
+    memberData=Member.objects.all()
+    data={
+        'memberData' : memberData
+    }
+    return render(request,"election-official.html", data)
 def wardEmployee(request):
-    return render(request,"ward-members.html")
+    memberData=Member.objects.all()
+    data={
+        'memberData' : memberData
+    }
+    return render(request,"ward-members.html",data)
 def multipalStaffs(request):
-    return render(request,"multipal-staffs.html")
+    memberData=Member.objects.all()
+    data={
+        'memberData' : memberData
+    }
+    return render(request,"multipal-staffs.html", data)

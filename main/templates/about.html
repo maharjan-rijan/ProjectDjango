@@ -34,7 +34,8 @@
           <img src="/media/{{mb.image}}" class="card-img-top" alt="...">
           <div class="card-body" style="text-align:center;">
             <h5 class="card-title">{{ mb.name }}</h5>
-            <h6 class="card-title">{{ mb.designation }}</h6>
+            <div class="card-title text-muted">{{ mb.designation }}</div>
+            <h5 class="card-title" style="font-weight: 400; font-family:'Times New Roman', Times, serif">{{ mb.contact }}</h5>
           </div>
         </div>
         {% endif %}
