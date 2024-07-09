@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from main.models import About,Member
+from main.models import *
 
 def homePage(request):
     aboutData=About.objects.all()

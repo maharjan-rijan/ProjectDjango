@@ -9,6 +9,8 @@ STAFFS = (
 class About(models.Model):
     title=models.CharField(max_length=100,null=True,default=None)
     slug=models.SlugField(unique=True,null=True,default=None)
+    contact=models.CharField(max_length=100,null=True)
+    email=models.EmailField(max_length=300,null=True)
     description=models.TextField()
     
 class Member(models.Model):
