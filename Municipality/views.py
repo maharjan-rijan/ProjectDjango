@@ -4,7 +4,7 @@ from main.models import *
 
 def homePage(request):
     aboutData=About.objects.all()
-    memberData=Member.objects.all()
+    memberData=Member.objects.all()[0:3]
     data={
         'aboutData':aboutData,
         'memberData' : memberData
