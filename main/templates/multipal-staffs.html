@@ -20,7 +20,7 @@
     <h4>Municipality Staffs</h4><hr>
     <div class="row">
       {% for mb in memberData %}
-      {% if mb.memberOf == 'multipalStaffs' %}
+      {% if mb.position == 'multipalStaffs' %}
       <div class="col-sm-4">
       <div class="card" style="margin:10px;">
         <img src="/media/{{mb.image}}" class="card-img-top" alt="...">

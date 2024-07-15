@@ -20,4 +20,4 @@ class Member(models.Model):
     designation=models.CharField(max_length=100,default=None)
     contact=models.CharField(max_length=100,null=True)
     email=models.EmailField(max_length=300,null=True)
-    memberOf=models.CharField(max_length=50,choices=STAFFS,default=None)
+    position=models.CharField(max_length=50,choices=STAFFS,default=None)
