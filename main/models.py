@@ -1,10 +1,5 @@
 from django.db import models
 
-CATEGORY = (
-    ("electionOfficial", "electionOfficial"),
-    ("multipalStaffs", "multipalStaffs"),
-    ("wardMembers", "wardMembers"),
-)
 POSITION = ( 
     ("mayor", "mayor"),
     ("deputy-mayor", "deputy-mayor"),
@@ -22,7 +17,7 @@ class About(models.Model):
     description=models.TextField()
     
 class Member(models.Model):
-    category=models.CharField(max_length=50,choices=CATEGORY,default=None,null=True)
+    # category=models.CharField(max_length=50,choices=CATEGORY,default=None)
     name=models.CharField(max_length=100,default=None)
     slug=models.SlugField(unique=True,null=True,default=None)
     image=models.FileField(upload_to="staffs/",max_length=255,null=True,default=None)
